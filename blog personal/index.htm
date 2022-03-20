@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <header id="titulo"><!--No podemos ingresar una etiqueta de hader en otra de hader o de futter-->    
+        <h1> Blog de Joaquin Labrador </h1><!--Los ids sireven para que podamos trabajar con el contenido en js o darle un style-->
+    </header>
+    <section class="container"> <!--Definir secciones, podemos colocar las etiquetas que queramos-->  
+        <article class="post"> <!--Definir contenido independiente-->
+            <h2>¿Quien soy?</h2>
+            <p>Hola mi nombre es Joaquin</p>
+            <img src="img/yo.jpg" width="400" />
+            <br>
+            <p>Soy estudiante en la tecnicatura superior en programacion en la Universidad tecnologica Nacional </p>
+        </article>
+        <article class="post">
+            <h2>Titulo de mi post 2 </h2><!--La funcion class sirve como id pero para trabajar con multiples elementos-->
+            <p>Contendo del post 2</p>
+            <img src="img/coding.jpg" width="400" />
+            <p>Texto de prueba 2</p>
+        </article>
+        <article class="post">
+            <h2>Titulo de mi post 3</h2>
+            <p>Contenido de mi post 3</p>
+            <img src="img/bodyboard.jpeg"width="400"/>
+            <p>texto de prueba de mi post 3</p>
+        </article>
+    </section>
+    <footer><!--Pie de paguina copyright,info de contacto, como navegar, links-->
+        <section>
+            <a href="#titulo">ir al comienzo |</a>
+            <a href="https://www.linkedin.com/in/joaquin-leonardo-labrador-658346198/">| Contáctame aquí </a>
+        </section>
+        <p>Copyright 2021</p>
+    </footer>
+</body>
+</html>

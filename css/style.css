@@ -1,0 +1,197 @@
+#titulo {
+  color: tomato;
+}
+p.especial {
+  color: mediumaquamarine;
+}
+p.texto {
+  color: violet;
+}
+div p {
+  color: aqua;
+}
+div h2,
+div h3 {
+  color: darkblue;
+}
+
+/** {
+  font-size: 24px;
+  color: black;
+}*/
+
+/*Comentario*/
+/*
+.color{
+    color: #ff0000;
+}
+*/
+
+/*.color{}
+    color: rgb(0,99,200);255 es el mas largo es su amplitud
+
+}
+*/
+.color {
+  /* border: 5px red solid; */
+  /*
+    dotted
+    dashed
+    sokid
+    double
+    desde aca 3D:
+    groove
+    ridge
+    inset
+    outset
+    hasta aca 3d
+    none
+    hiden
+    */
+  /*Borders es profundida ,desde no tener que inidicar los px,el color y poder
+    darle forma*/
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px;
+  border-width: 5rem; /*Relativo a la fuente del elemento raiz osea el <html>*/
+  /*
+    SEEGUIR CURSO EN UNIDADES DE MEDIDA
+    */
+}
+/*Background*/
+#background {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /*El cuaarto elemento da una apacidad 1 totalmente tapado 0 transparente 0 */
+  /*opacity le da una transparencia al id o elemento completo */
+  height: 400px;
+  /*background-image: url("background.jpg");*/
+ /* background-size: 100px 100px;*/     
+  /*background-repeat: repeat-y;
+  background-position: right top;*/
+  background: red url('background.jpg') repeat-y center bottom / 100px 100px; /* forma compacta*/
+ 
+}
+.margen{
+    background-color: chocolate;
+    margin:15px ; /* 15 M_TOP 20 M_RIGHT 25 M_BOTTOM 30 M_LEFT*/
+    padding: 30px 15px 5px ;
+    border: solid 1px black;
+    height: 200px;
+    width: 50px;
+    /* cuando utilizamos las propiedades de hiegt and widgt nosotros le asignamos un espacio al coontenido de la etique no a su boxmodel*/
+    overflow: scroll;
+    outline: 20px solid red  ; /*Borde que se colaco por afuera del borde pero esta antrs de margin */
+}
+.text{
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 7px 4px 5px gray ;     /*El ultimo valor es el blur*/
+    font-family: Arial, Helvetica, sans-serif; /*Descargada de google font aplicada en el head de html*/
+  }
+a:link{
+  color:blue;
+} 
+a:visited{
+  color:violet; 
+}
+a:hover{
+  color: darkgoldenrod;
+}
+a:active{
+  color: black;
+}
+ul{
+ background-color: darksalmon;
+ list-style-type: none;
+ padding-left: 0; /*Ocupa lugar del pading */
+ /*list-style-position:inside; darle posicion a los identifacadores de la lsitas*/ 
+ /*Sacarle los puntios etc a las listas con none*/
+  
+}
+/*Seguir en tablas*/
+table{
+  width: 100%;
+}
+th,td{
+  border:  solid 1px #aaa;
+  border-collapse: collapse;/*Funcion para evitar separacion entre celdas*/
+  padding: 5px; /*Dar espacio*/
+}
+th{
+  background-color: tomato;
+  color: white;
+  text-align: left;
+}
+
+ /*Como seleccionar algunos elementos en particular de la listo
+ por ejemplo seleccionar solo los pares*/
+ tr:nth-child(even){
+   background-color: #eee;
+ }
+ /*El hover sirve para ralizar modificaciones,
+ cuando uno pasa el cursor por arriba de los elementos*/
+ tr:hover
+ {
+   background-color: teal;
+   cursor: pointer ; /*Hace que aparezca la manito del mouse :D*/ 
+ }
+
+ /*Propiedad de display nos va a indicar como vamos a colacar los elementos
+ de HTML sobre nuestro documento*/
+span{
+  display: block; /*Realiza un salto de linea*/
+  
+  /*display: none; 
+  visibility: hidden; ambas ocultan los elementos */
+  max-width: 300px; /*Se adapta*/
+  background-color: red;
+}
+.inline{
+  display: inline; /*Van a estar en la misma linea*/
+}
+#position{
+  position: sticky; /*Fija los elemtos y hasta los puede hacer mover 
+  en el navegador*/ 
+  left: 20px;
+  /*top : 25px;*/
+
+}
+.left{
+  float: left; /*Hace que el elemento solo se 
+  posicione a la izquierda*/
+  width: 200px;/*Sirve para separar un poco*/
+  height: 200px;
+}
+/*Como los elemento izq y der estan contenidos en un div padre los elemtos
+ se van a acomader si ya uno de ellos le asigno la propiedad de float*/
+.container{
+  height: 200px;
+}
+.right{
+  float: right ;
+}
+.card{
+  border: solid slateblue 1px;
+  border-radius: 5px;
+  margin: 0 15px;
+  padding: 10px 15px;
+ /*width: 33.3%; Asiganamos un ancho por centual osea acutuaria como una columna osea el  33.3 son 3 columnas,
+  pero los elemento de borders margin y padding alteran esta funcion no hay que incluirlos*/
+}
+.inline-block{
+  display: inline-block;/*Cuando utilizo la funcion de display puedo asignar anchos altura etc*/
+  height: 55px;
+  background-color: blue;
+  /*display:inline; no se les puede asignar propiedad de ancho ni altura*/
+}
+/*Para centrar un elemento siempre le tenemos que asignar un ancho*/
+.center{
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  background-color: aqua;
+}
